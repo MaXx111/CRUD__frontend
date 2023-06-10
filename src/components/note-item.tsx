@@ -6,11 +6,11 @@ interface NoteItemProps {
 }
 
 const NoteItem = memo(function NoteItem({note, onRemove}: NoteItemProps) {
-    
+
     return(
         <>
         <div className="item">
-            <img className="item-delete-img" src="/delete.png" alt="delete" onClick={() => onRemove(note.id)} />
+            <img className="item-delete-img" src="delete.png" alt="delete" onClick={() => onRemove(note.id)} />
             <p className="item-text">{note.content}</p>
         </div>
         </>
