@@ -5,38 +5,78 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset-btn {
+  width: 50px;
+  height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.reset-btn:hover {
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
+.reset-btn:active {
+  cursor: auto;
 }
 
-.read-the-docs {
-  color: #888;
+.form-crud {
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.from-textarea {
+  resize: none;
+  border-radius: 32px;
+  padding: 20px;
+}
+
+.form-btn {
+  display: flex;
+  position: absolute;
+  top: 145px;
+  left: 240px;
+  background-color: wheat;
+  border-radius: 100%;
+  padding: 6px;
+}
+
+.notes-list {
+  display: flex;
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  position: relative;
+  background-color: beige;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 200px;
+  padding: 20px;
+}
+
+.item-delete-img {
+  position: absolute;
+  left: 195px;
+  top: 10px;
+  width: 25px;
+}
+
+.item-delete-img:hover {
+  cursor: pointer;
+}
+
+.item-delete-img:active {
+  cursor: auto;
+}
+
+.item-text {
+  color: #000;
 }
