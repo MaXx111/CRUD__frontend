@@ -6,7 +6,7 @@ interface NotesListProps {
         id: number,
         content: string 
     }[],
-    onRemove: any
+    onRemove: (id: number) => void;
 }
 
 const NotesList = memo(function NotesList({notes, onRemove}: NotesListProps) {

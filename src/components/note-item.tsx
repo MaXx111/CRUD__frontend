@@ -1,8 +1,11 @@
 import { memo } from 'react'
 
 interface NoteItemProps {
-    note: any
-    onRemove: any
+    note: {
+        id: number,
+        content: string 
+    },
+    onRemove: (id: number) => void;
 }
 
 const NoteItem = memo(function NoteItem({note, onRemove}: NoteItemProps) {
